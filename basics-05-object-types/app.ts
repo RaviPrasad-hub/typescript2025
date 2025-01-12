@@ -1,19 +1,26 @@
-function add(n1: number, n2: number, showResult: boolean, phrase: string) {
-  // if (typeof n1 !== 'number' || typeof n2 !== 'number') {
-  //   throw new Error('Incorrect input!');
-  // }
-  const result = n1 + n2;
-  if (showResult) {
-    console.log(phrase + result);
-  } else {
-    return result;
-  }
+function addAndReturn( number1 : number , number2 : number) {
+  return number1 + number2;
 }
 
-let number1: number;
-number1 = 5;
-const number2 = 2.8;
-const printResult = true;
-let resultPhrase = 'Result is: ';
 
-add(number1, number2, printResult, resultPhrase);
+function add( number1 : number , number2 : number) : void {
+  console.log(number1 + number2);
+  return;
+}
+
+//console.log(addAndReturn(4,6));
+//console.log(add(4,8));
+
+let combineValues : (a: number , b: number) => number;
+combineValues = addAndReturn;
+console.log(combineValues(8,8));
+
+
+const addAndHandle = (n1 : number , n2 : number , cb : (num : number) => void ) => {
+  cb(n1+n2);
+  return;
+}
+
+addAndHandle(10,24, (result) => {
+  console.log(result);
+})
