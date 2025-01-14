@@ -3,7 +3,7 @@ function addAndReturn( number1 : number , number2 : number) {
 }
 
 
-function add( number1 : number , number2 : number) : void {
+function addition( number1 : number , number2 : number) : void {
   console.log(number1 + number2);
   return;
 }
