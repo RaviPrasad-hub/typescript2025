@@ -109,6 +109,7 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
   "exclude" : [
-    "analytics.dev.ts"
+    "node_modules"
   ]
+  //node_modules is by default excluded
 }

@@ -35,6 +35,11 @@ const addNum = (...numbers: number[] | [number , number, number]) => {
     } , 0);
 };
 
+//destructuring
 const addedNumbers = addNum(5,10,3,21,1,2);
 console.log(addedNumbers);
+
+const nums = [3,4,6,3,4];
+const [...nums1] = nums;
+console.log(nums1);
 
