@@ -108,5 +108,16 @@ moveAnimal({type :'horse', runningSpeed : 200})
 moveAnimal({type :'bird', flyingSpeed : 500})
 
 
+// Type casting
 
+const userInputElement = document.querySelector('user-input');
+//or,
+//const userInputElement1 = <HTMLInputElement>document.getElementById('user-input')!;
+
+if(userInputElement) {
+    (userInputElement as HTMLInputElement).value = 'hi there!!';
+}
+
+
+// Index properties
 
