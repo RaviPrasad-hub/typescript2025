@@ -133,3 +133,17 @@ const errorBag: ErrorContainer = {
 }
 
 //Optional Chaining
+
+const fetchUserDate = {
+    name : "ravi",
+    DOB : "19041994",
+    job : { title : 'CEO' , description : 'My own company' }
+}
+
+console.log(fetchUserDate?.job?.title);
+
+// nullish coalescing ??
+
+const userInput = 'socka';
+const storedData = userInput ?? 'DEFAULT';
+console.log(storedData);
